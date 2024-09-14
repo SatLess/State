@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="TextRes" load_steps=9 format=3 uid="uid://dx373eaij244"]
+
+[ext_resource type="Script" path="res://Dialogue/textRes.gd" id="1_v7xlw"]
+[ext_resource type="Script" path="res://Dialogue/choiceRes.gd" id="1_xwvmm"]
+
+[sub_resource type="Resource" id="Resource_8qm21"]
+script = ExtResource("1_v7xlw")
+text = "yum"
+name = ""
+
+[sub_resource type="Resource" id="Resource_e6stm"]
+script = ExtResource("1_v7xlw")
+text = "Yes"
+name = ""
+next_node = SubResource("Resource_8qm21")
+
+[sub_resource type="Resource" id="Resource_ujanv"]
+script = ExtResource("1_v7xlw")
+text = "ok...."
+name = ""
+
+[sub_resource type="Resource" id="Resource_4jfau"]
+script = ExtResource("1_v7xlw")
+text = "No"
+name = ""
+next_node = SubResource("Resource_ujanv")
+
+[sub_resource type="Resource" id="Resource_xndkn"]
+script = ExtResource("1_xwvmm")
+choices_text = Array[ExtResource("1_v7xlw")]([SubResource("Resource_e6stm"), SubResource("Resource_4jfau")])
+
+[sub_resource type="Resource" id="Resource_tkwq7"]
+script = ExtResource("1_v7xlw")
+text = "I wanna eat them, do you?"
+name = ""
+next_node = SubResource("Resource_xndkn")
+
+[resource]
+script = ExtResource("1_v7xlw")
+text = "Hey I like placeholders"
+name = "Anarchist"
+next_node = SubResource("Resource_tkwq7")

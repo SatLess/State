@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://cy2oi5452ycgc"]
+
+[ext_resource type="Script" path="res://Dialogue/dialogue_manager.gd" id="1_gfgb2"]
+[ext_resource type="Resource" uid="uid://dx373eaij244" path="res://Text/test.tres" id="2_dgc35"]
+
+[node name="DialogueManager" type="Node"]
+script = ExtResource("1_gfgb2")
+conversation_obj = ExtResource("2_dgc35")
