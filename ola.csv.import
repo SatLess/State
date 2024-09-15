@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://d4bqu4aaetk64"
+
+[deps]
+
+files=["res://ola.en.translation", "res://ola.pt.translation"]
+
+source_file="res://ola.csv"
+dest_files=["res://ola.en.translation", "res://ola.pt.translation"]
+
+[params]
+
+compress=true
+delimiter=0

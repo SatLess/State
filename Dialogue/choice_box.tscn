@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://cjyiur3hilprx"]
+
+[ext_resource type="Script" path="res://Dialogue/choice_box.gd" id="1_kveqf"]
+
+[node name="ChoiceBox" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kveqf")
+
+[node name="VSplitContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.248264
+anchor_top = 0.364198
+anchor_right = 0.759
+anchor_bottom = 0.754
+offset_right = -0.368042
+offset_bottom = -201.592
+grow_horizontal = 2
+
+[node name="testButton" type="Button" parent="VSplitContainer"]
+visible = false
+custom_minimum_size = Vector2(588, 51)
+layout_mode = 2
